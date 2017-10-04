@@ -175,4 +175,4 @@ class FormAdmin(PageAdmin):
         f.close()
         return response
 
-admin.site.register(Form, FormAdmin)
+# admin.site.register(Form, FormAdmin)
