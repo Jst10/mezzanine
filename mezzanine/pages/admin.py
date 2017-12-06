@@ -184,4 +184,4 @@ class LinkAdmin(PageAdmin):
 
 admin.site.register(Page, PageAdmin)
 # admin.site.register(RichTextPage, PageAdmin)
-# admin.site.register(Link, LinkAdmin)
+admin.site.register(Link, LinkAdmin)
