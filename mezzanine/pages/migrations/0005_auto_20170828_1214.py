@@ -15,11 +15,6 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name='page',
-            name='_meta_title_de',
-            field=models.CharField(blank=True, help_text='Optional title to be used in the HTML title tag. If left blank, the main title field will be used.', max_length=500, null=True, verbose_name='Title'),
-        ),
-        migrations.AddField(
-            model_name='page',
             name='_meta_title_en',
             field=models.CharField(blank=True, help_text='Optional title to be used in the HTML title tag. If left blank, the main title field will be used.', max_length=500, null=True, verbose_name='Title'),
         ),
@@ -27,11 +22,6 @@ class Migration(migrations.Migration):
             model_name='page',
             name='_meta_title_sl',
             field=models.CharField(blank=True, help_text='Optional title to be used in the HTML title tag. If left blank, the main title field will be used.', max_length=500, null=True, verbose_name='Title'),
-        ),
-        migrations.AddField(
-            model_name='page',
-            name='description_de',
-            field=models.TextField(blank=True, null=True, verbose_name='Description'),
         ),
         migrations.AddField(
             model_name='page',
@@ -45,11 +35,6 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='page',
-            name='title_de',
-            field=models.CharField(max_length=500, null=True, verbose_name='Title'),
-        ),
-        migrations.AddField(
-            model_name='page',
             name='title_en',
             field=models.CharField(max_length=500, null=True, verbose_name='Title'),
         ),
@@ -57,11 +42,6 @@ class Migration(migrations.Migration):
             model_name='page',
             name='title_sl',
             field=models.CharField(max_length=500, null=True, verbose_name='Title'),
-        ),
-        migrations.AddField(
-            model_name='page',
-            name='titles_de',
-            field=models.CharField(editable=False, max_length=1000, null=True),
         ),
         migrations.AddField(
             model_name='page',
@@ -75,17 +55,62 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='richtextpage',
-            name='content_de',
-            field=mezzanine.core.fields.RichTextField(null=True, verbose_name='Content'),
-        ),
-        migrations.AddField(
-            model_name='richtextpage',
             name='content_en',
             field=mezzanine.core.fields.RichTextField(null=True, verbose_name='Content'),
         ),
         migrations.AddField(
             model_name='richtextpage',
             name='content_sl',
+            field=mezzanine.core.fields.RichTextField(null=True, verbose_name='Content'),
+        ),
+        migrations.AddField(
+            model_name='page',
+            name='_meta_title_bg',
+            field=models.CharField(blank=True, help_text='Optional title to be used in the HTML title tag. If left blank, the main title field will be used.', max_length=500, null=True, verbose_name='Title'),
+        ),
+        migrations.AddField(
+            model_name='page',
+            name='_meta_title_ru',
+            field=models.CharField(blank=True, help_text='Optional title to be used in the HTML title tag. If left blank, the main title field will be used.', max_length=500, null=True, verbose_name='Title'),
+        ),
+        migrations.AddField(
+            model_name='page',
+            name='description_bg',
+            field=models.TextField(blank=True, null=True, verbose_name='Description'),
+        ),
+        migrations.AddField(
+            model_name='page',
+            name='description_ru',
+            field=models.TextField(blank=True, null=True, verbose_name='Description'),
+        ),
+        migrations.AddField(
+            model_name='page',
+            name='title_bg',
+            field=models.CharField(max_length=500, null=True, verbose_name='Title'),
+        ),
+        migrations.AddField(
+            model_name='page',
+            name='title_ru',
+            field=models.CharField(max_length=500, null=True, verbose_name='Title'),
+        ),
+        migrations.AddField(
+            model_name='page',
+            name='titles_bg',
+            field=models.CharField(editable=False, max_length=1000, null=True),
+        ),
+        migrations.AddField(
+            model_name='page',
+            name='titles_ru',
+            field=models.CharField(editable=False, max_length=1000, null=True),
+        ),
+        migrations.AddField(
+            model_name='richtextpage',
+            name='content_bg',
+            field=mezzanine.core.fields.RichTextField(null=True, verbose_name='Content'),
+        ),
+        migrations.AddField(
+            model_name='richtextpage',
+            name='content_ru',
             field=mezzanine.core.fields.RichTextField(null=True, verbose_name='Content'),
         ),
     ]
